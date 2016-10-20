@@ -8,6 +8,7 @@
             <p>
                 Year:{{movie.Year}}
             </p>
+            <span id="spinner" ng-if="!movies[0].Title" us-spinner="{radius:30, width:8, length: 16}"></span>
         </div>
     </div>
 </div>

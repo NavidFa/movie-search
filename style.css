@@ -72,6 +72,10 @@ font-family: 'Montserrat', sans-serif;*/
 #noResult{
   font-family: 'Libre Franklin', sans-serif;
   text-align: center;
+  margin-top: 10%;
+}
+#spinner{
+  margin-top: 5%;
 }
 .details{
   display: flex;
@@ -79,5 +83,4 @@ font-family: 'Montserrat', sans-serif;*/
   align-items: center;
   font-size: 1.5rem;
   font-family: 'Libre Franklin', sans-serif;
-
 }
