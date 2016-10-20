@@ -1,0 +1,14 @@
+
+<div class="list">
+<div class="results" >
+  <span ng-if="!movies[0].Title" us-spinner="{radius:30, width:8, length: 16}"></span>
+
+        <div  ng-click="movieByid(movie.imdbID)" class="half-list" ng-repeat="movie in movies">
+            <h4>{{movie.Title}}</h4>
+            <p>
+                Year:{{movie.Year}}
+            </p>
+        </div>
+    </div>
+</div>
+<h2 id="noResult" ng-show="response">There is no movie with this title!</h2>

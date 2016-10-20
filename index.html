@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html ng-app="movieSearch">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css" media="screen" title="no title">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js">
+    </script>
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Domine|Gloria+Hallelujah|Libre+Franklin|Montserrat|Raleway|Roboto+Condensed" rel="stylesheet">
+    <title>Movie Search</title>
+</head>
+
+<body>
+    <div ng-controller="search" ng-class="{'wrapperShrink':shrink, 'wrapper':!shrink}">
+        <div class="search">
+            <h1>Find More About Your Favorite Movie</h1>
+            <form ng-submit="search()" name="searchform">
+                <label for="name">Enter a movie title</label>
+                <input ng-model="title" type="text" name="query" placeholder="move title">
+                <button ng-click="shrink=1" type="submit" name="searchbutton">Search</button>
+            </form>
+        </div>
+    </div>
+    <div ng-view>
+    </div>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-route.js">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/spin.js/2.3.2/spin.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-spinner/0.8.1/angular-spinner.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/controllers.js">
+    </script>
+</body>
+
+</html>
