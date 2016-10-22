@@ -17,7 +17,7 @@ app.controller('results', function($scope, $http, $location, $routeParams) {
             }
         })
 
-})
+});
 app.controller("details", function($scope, $http, $location, $routeParams,usSpinnerService) {
     $http.get("http://www.omdbapi.com/?i=" + $routeParams.id)
         .then(function(movie) {
@@ -31,4 +31,4 @@ app.controller("details", function($scope, $http, $location, $routeParams,usSpin
             $scope.year = movie.data.Year
             usSpinnerService.spin('spinner-1');
         })
-})
+});
