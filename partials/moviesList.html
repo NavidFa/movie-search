@@ -1,9 +1,8 @@
-
 <div class="list">
-<div class="results" >
-  <span ng-if="!movies[0].Title" us-spinner="{radius:30, width:8, length: 16}"></span>
-
-        <div  ng-click="movieByid(movie.imdbID)" class="half-list" ng-repeat="movie in movies">
+    <div class="results">
+        <span ng-if="!movies[9].Poster" us-spinner="{radius:30, width:8, length: 16}"></span>
+        <div ng-click="movieByid(movie.imdbID)" class="half-list" ng-repeat="movie in movies">
+            <img class="poster" ng-src="{{movie.Poster}}" alt="movie poster"/>
             <h4>{{movie.Title}}</h4>
             <p>
                 Year:{{movie.Year}}

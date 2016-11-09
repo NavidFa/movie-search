@@ -9,8 +9,7 @@ font-family: 'Montserrat', sans-serif;*/
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 3%;
-    padding: 3%;
+
 }
 .wrapperShrink {
     display: flex;
@@ -51,8 +50,9 @@ font-family: 'Montserrat', sans-serif;*/
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
-    width: 90%;
+
 }
 .half-list {
     font-size: 1.2rem;
@@ -83,4 +83,20 @@ font-family: 'Montserrat', sans-serif;*/
   align-items: center;
   font-size: 1.5rem;
   font-family: 'Libre Franklin', sans-serif;
+}
+.poster{
+  width: 100px;
+  height: 100px;
+}
+.subdetail{
+  display: flex;
+  width:70%;
+  flex-direction:row;
+  justify-content:space-between;
+  padding:1%;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+
+}
+.movietext{
+  padding: 2%;
 }
